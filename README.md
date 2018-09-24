@@ -1,6 +1,10 @@
 # Greet and Calculate
 
+#### Table of Contents
+[greet.js](#greet.js)  
+[arithmetic.js](#arithmetic.js) 
 
+<a name="greet.js"/>
 ## greet.js
 
 ### Function: greet
@@ -26,7 +30,7 @@
 * throws error if `name` is not a string
 
 
-
+<a name="arithmetic.js"/>
 ## arithmetic.js
 
 ### Function: add
