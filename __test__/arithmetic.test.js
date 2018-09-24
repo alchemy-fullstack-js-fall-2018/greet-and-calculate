@@ -8,6 +8,18 @@ describe('addition', () => {
         assert.equal(result, 15);
     });
 
+    it('throws an error when first argument is not a number', () => {
+        assert.throws(() => {
+            add('notANumber', 5);
+        }, Error);
+    });
+
+    it('throws an error when second argument is not a number', () => {
+        assert.throws(() => {
+            add(5, 'notANumber');
+        }, Error);
+    });
+
 });
 
 describe('subtraction', () => {
