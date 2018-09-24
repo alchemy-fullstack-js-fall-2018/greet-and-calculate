@@ -57,7 +57,7 @@ description should include it's airty (expected number of parameters), the expec
 (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include
 any additional information that you would like.
 
-### Challenge
+## Challenge Tasks
 
 #### Greet Module
 
