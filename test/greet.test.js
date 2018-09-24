@@ -6,4 +6,10 @@ describe('greeting', () => {
         const greeting = greet('world');
         assert.equal(greeting, 'hello world');
     });
+
+    it('throws error when name is not a string', () => {
+        assert.throws(() => {
+            greet({});
+        }, Error);
+    });
 });
