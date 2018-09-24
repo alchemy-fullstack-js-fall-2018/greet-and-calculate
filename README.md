@@ -1,6 +1,8 @@
 # Greet and Calculate
 
-#### Table of Contents
+Extremely proud of these advanced calculation tools.
+
+## Table of Contents
 * [greet.js](#greet.js)
     * [greet](#greet)
 * [arithmetic.js](#arithmetic.js)
