@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { add, sub } = require('../lib/arithmetic.js');
+const { add, sub, multiply } = require('../lib/arithmetic.js');
 
 describe('addition', () => {
 
@@ -27,6 +27,39 @@ describe('subtraction', () => {
     it('correctly subtracts two numbers', () => {
         const result = sub(15, 9);
         assert.equal(result, 6);
+    });
+
+    it('throws an error when first argument is not a number', () => {
+        assert.throws(() => {
+            sub('notANumber', 5);
+        }, Error);
+    });
+
+    it('throws an error when second argument is not a number', () => {
+        assert.throws(() => {
+            sub(5, 'notANumber');
+        }, Error);
+    });
+
+});
+
+describe('multiplication', () => {
+
+    it('correctly multiplies two numbers', () => {
+        const result = multiply(10, 13);
+        assert.equal(result, 130);
+    });
+
+    it('throws an error when first argument is not a number', () => {
+        assert.throws(() => {
+            multiply('notANumber', 5);
+        }, Error);
+    });
+
+    it('throws an error when second argument is not a number', () => {
+        assert.throws(() => {
+            multiply(5, 'notANumber');
+        }, Error);
     });
 
 });
