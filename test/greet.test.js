@@ -5,7 +5,7 @@ describe('greet', () => {
 
     it('throws error if input is not a string', () => {
         assert.throws(() => {
-            greet({});
+            greet(4);
         }, Error);
     });
 

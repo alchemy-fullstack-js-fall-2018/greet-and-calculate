@@ -5,7 +5,7 @@ describe('add', () => {
 
     it('receives two numbers', () => {
         assert.throws(() => {
-            add({});
+            add(4, 'I am not a number');
         }, Error);
     });
 
@@ -20,7 +20,7 @@ describe('sub', () => {
 
     it('receives two numbers', () => {
         assert.throws(() => {
-            sub({});
+            sub(4, 'I am not a number');
         }, Error);
     });
 
@@ -35,7 +35,7 @@ describe('multiply', () => {
 
     it('receives two numbers', () => {
         assert.throws(() => {
-            multiply({});
+            multiply(4, 'I am not a number');
         }, Error);
     });
 
