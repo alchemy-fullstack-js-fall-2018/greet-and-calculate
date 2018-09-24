@@ -6,7 +6,7 @@ Configure the root of your repository with the following files and directories.
 Thoughtfully name and organize any additional configuration or module files.
 
 * **README.md** - contains your documentation
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
+* **.gitignore** - contains a `.gitignore` file
 * **.eslintrc** - contains the course linter configuration
 * **.travis.yml** - contains your travis testing instructions
 * **package.json** - contains npm package config 
@@ -61,8 +61,10 @@ any additional information that you would like.
 
 ### Greet Module
 
-* The `greet` function should take a salutation as an optional input to be concatenated with the input name:
-eg. ("Greetings susan").
+* The `greet` function should take an input name and an options object. If the options object includes a salutation key
+greet should return the salutation concatenated with name: eg. ("Greetings susan").
+
+* Play around with other options you can pass. For example, shout.
 
 ### Arithmetic Module
 
