@@ -18,6 +18,12 @@ describe('add', () => {
 
 describe('sub', () => {
 
+    it('receives two numbers', () => {
+        assert.throws(() => {
+            sub({});
+        }, Error);
+    });
+
     it('returns the difference of two numbers', () => {
         const diff = sub(3, 2);
         assert.equal(diff, 1);
