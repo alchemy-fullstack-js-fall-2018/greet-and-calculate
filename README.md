@@ -1,12 +1,17 @@
 # Greet and Calculate
 
 #### Table of Contents
-[greet.js](#greet.js)  
-[arithmetic.js](#arithmetic.js) 
+* [greet.js](#greet.js)
+    * [greet](#greet)
+* [arithmetic.js](#arithmetic.js)
+    * [add](#add)
+    * [sub](#sub)
 
 <a name="greet.js"/>
 
 ## greet.js
+
+<a name="greet"/>
 
 ### Function: greet
 
@@ -35,6 +40,8 @@
 
 ## arithmetic.js
 
+<a name="add"/>
+
 ### Function: add
 
 #### Overview
@@ -58,6 +65,7 @@
 
 * throws error if `num1` or `num1` are not numbers
 
+<a name="sub"/>
 
 ### Function: sub
 
