@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { add, sub, multiply } = require('../lib/arithmetic.js');
+const { add, sub, multiply, divide } = require('../lib/arithmetic.js');
 
 describe('addition', () => {
 
@@ -59,6 +59,33 @@ describe('multiplication', () => {
     it('throws an error when second argument is not a number', () => {
         assert.throws(() => {
             multiply(5, 'notANumber');
+        }, Error);
+    });
+
+});
+
+describe('division', () => {
+
+    it('correctly divides two numbers', () => {
+        const result = divide(10, 5);
+        assert.equal(result, 2);
+    });
+
+    it('throws an error when first argument is not a number', () => {
+        assert.throws(() => {
+            divide('notANumber', 5);
+        }, Error);
+    });
+
+    it('throws an error when second argument is not a number', () => {
+        assert.throws(() => {
+            divide(5, 'notANumber');
+        }, Error);
+    });
+
+    it('throws an error when second argument is a zero', () => {
+        assert.throws(() => {
+            divide(5, 0);
         }, Error);
     });
 
