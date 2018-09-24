@@ -1,77 +1,33 @@
 # Greet and Calculate
 
-## Configuration
+## greet
 
-Configure the root of your repository with the following files and directories.
-Thoughtfully name and organize any additional configuration or module files.
+### greet(name) 
+This function accepts the name of the entity to be greeted and replies with "hello <name>".
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a `.gitignore` file
-* **.eslintrc** - contains the course linter configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
-  * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+<name> must be a string.
 
-## Testing
+## arithmetic
 
-### Greet Module Tests
+### add(num1, num2)
+This function accepts two numbers and returns the sum of the numbers.
 
-* Write a test that expects the greet module to throw an error when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
+Both arguments must be numbers.
 
-### Arithmetic Module Tests
+### sub(num1, num2)
 
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
+This function accepts two numbers and returns the difference between the numbers.
 
-## Feature Tasks
+Both arguments must be numbers.
 
-### Greet Module
+### multiply(num1, num2)
 
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should throw an error if the input is not a string
+This function accepts two numbers and returns the product of the numbers.
 
-### Arithmetic Module
+Both arguments must be numbers.
 
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have
-`add` and `sub` methods that implement addition and subtraction.
+### divide(num1, num2)
+This function accepts two numbers and returns the quotient of the numbers.
 
-* The `add` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the second parameter subtracted from the first parameter
+Both arguments must be numbers, and the second argument may not be zero.
 
-### Documentation
-
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function
-description should include it's airty (expected number of parameters), the expected data for each parameter
-(data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include
-any additional information that you would like.
-
-## Challenge Tasks
-
-### Greet Module
-
-* The `greet` function should take an input name and an options object. If the options object includes a salutation key
-greet should return the salutation concatenated with name: eg. ("Greetings susan").
-
-* Play around with other options you can pass. For example, shout.
-
-### Arithmetic Module
-
-* The `multiply` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the 2 numbers multiplied by eachother
-* The `divide` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `if` the second argument is `0` the function should throw an error
-  * `else` return the first number divided by the second
