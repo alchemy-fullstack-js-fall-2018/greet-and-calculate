@@ -14,4 +14,9 @@ describe('greet', () => {
         assert.equal(greeting, 'hello world');
     });
 
+    it('returns custom salutation if options has salutation property', () => {
+        const greeting = greet('dude', { salutation: 'sup' });
+        assert.equal(greeting, 'sup dude');
+    });
+
 });
