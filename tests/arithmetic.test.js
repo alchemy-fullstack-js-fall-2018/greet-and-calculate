@@ -15,7 +15,7 @@ describe('arithmetic', () =>{
 
     it('add should throw an error if given non-number input', () => {
         assert.throws(() => {
-            add(5, 'ham');
+            add('cheese', 5);
         }, Error);
     });
 
@@ -23,6 +23,6 @@ describe('arithmetic', () =>{
         assert.throws(() => {
             subtract(2, 'bologna');
         }, Error);
-    })
+    });
 
 });
