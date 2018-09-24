@@ -1,5 +1,4 @@
 # Greet and Calculate
-===
 
 ## Configuration
 
