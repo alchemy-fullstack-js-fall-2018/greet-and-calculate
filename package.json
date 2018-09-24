@@ -1,0 +1,27 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "## Configuration",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidChhing/greet-and-calculate.git"
+  },
+  "author": "davidhchhing@gmail.com (https://github.com/davidchhing)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidChhing/greet-and-calculate/issues"
+  },
+  "homepage": "https://github.com/DavidChhing/greet-and-calculate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "jest": "^23.6.0"
+  }
+}
