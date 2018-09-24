@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { add, subtract } = require('../lib/arithmetic');
+const { add, subtract, multiply } = require('../lib/arithmetic');
 
 describe('arithmetic', () =>{
     
@@ -23,6 +23,11 @@ describe('arithmetic', () =>{
         assert.throws(() => {
             subtract(2, 'bologna');
         }, Error);
+    });
+
+    it('should multiply two numbers', () => {
+        const product = multiply(2, 5);
+        assert.equal(product, 10);
     });
 
 });
