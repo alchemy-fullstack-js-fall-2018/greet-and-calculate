@@ -8,7 +8,10 @@
   * Non-string arguments passed to `greet()` will throw an error.
 
 #### `arithmetic`
-  * `add()` and `subtract()` each have arities of 2 and accept numbers. 
-  * `add()` should return the sum of two numbers.
-  * `subtract()` should return the difference of two numbers.
-  * Non-number arguments passed to `add()` and `subtract()` will throw an error. 
+  * `add()`, `subtract()`, `multiply()`, and `divide()` each have arities of 2 and accept numbers. 
+  * `add()` returns the sum of two numbers.
+  * `subtract()` returns the difference of two numbers.
+  * `multiply()` returns the product of two numbers. 
+  * `divide()` returns the quotient of two numbers. 
+  * Non-number arguments passed to `add()`, `subtract()`, `multiply()`, and `divide()` will throw an error. 
+  * Dividing by 0 will throw an error.
