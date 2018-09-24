@@ -29,6 +29,10 @@ describe('addition', () => {
         assert.equal(sum, 4.6356);
     });
     
+});
+
+describe('subtraction', () => {
+
     it('subtracts two numbers supplied as arguments', () => {
         const difference = subtract(40, 60);
         assert.equal(difference, -20);
@@ -54,7 +58,5 @@ describe('addition', () => {
         const difference = subtract('3.1789', '1.4567');
         assert.equal(difference, 1.7222);
     });
-
-
-
+    
 });
