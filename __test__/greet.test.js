@@ -9,7 +9,9 @@ describe('greetings', () => {
     });
 
     it('throws an error when name is not a string', () => {
-        if (typeOf )
+        assert.throws(() => {
+            greet({});
+        }, Error);
     });
 
 });
