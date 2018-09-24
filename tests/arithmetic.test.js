@@ -41,4 +41,10 @@ describe('arithmetic', () =>{
         assert.equal(quotient, 2);
     });
 
+    it('should throw an error if dividing by 0', () => {
+        assert.throws(() => {
+            divide(3, 0);
+        }, Error);
+    });
+
 });
