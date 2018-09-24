@@ -3,9 +3,9 @@
 ## greet
 
 ### greet(name) 
-This function accepts the name of the entity to be greeted and replies with "hello <name>".
+This function accepts the name of the entity to be greeted and replies with "hello [name]".
 
-<name> must be a string.
+[name] must be a string.
 
 ## arithmetic
 
