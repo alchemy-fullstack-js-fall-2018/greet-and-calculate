@@ -23,15 +23,20 @@ Extremely proud of these advanced calculation tools.
 
 #### Syntax
 
-* greet(name)
+* greet(name, [,options])
 
 #### Arguments
 
 * `name`: string
+* `options`: object
+    * `object.salutation`: string
 
 #### Return value
 
-* 'hello \<name>'
+* if no salutation is supplied:
+    * 'hello \<name>'
+* if a salutation is supplied:
+    * '\<salutation> \<name>'
 
 #### Errors
 
@@ -91,3 +96,55 @@ Extremely proud of these advanced calculation tools.
 #### Errors
 
 * throws error if `num1` or `num1` are not numbers
+
+<a name="multiply"/>
+
+### Function: multiply
+
+#### Overview
+
+* multiply is a function that returns a product of two numbers
+
+#### Syntax
+
+* multiply(num1, num2)
+
+#### Arguments
+
+* `num1`: number
+* `num2`: number
+
+#### Return value
+
+* \<prod>, a number
+
+#### Errors
+
+* throws error if `num1` or `num1` are not numbers
+
+<a name="divide"/>
+
+### Function: divide
+
+#### Overview
+
+* divide is a function that returns a quotient of two numbers
+
+#### Syntax
+
+* divide(num1, num2)
+
+#### Arguments
+
+* `num1`: number
+* `num2`: number
+
+#### Return value
+
+* \<quot>, a number
+
+#### Errors
+
+* throws error if `num1` or `num1` are not numbers
+* throws error if `num2` is `0`
+
