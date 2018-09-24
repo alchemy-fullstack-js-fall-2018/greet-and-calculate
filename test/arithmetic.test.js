@@ -8,4 +8,10 @@ describe('addition', () => {
         assert.equal(sum, 65);
     });
 
+    it('throws error when one or both of the arguments are NaN', () => {
+        assert.throws(() => {
+            add('a', 5);
+        }, Error);
+    });
+    
 });
