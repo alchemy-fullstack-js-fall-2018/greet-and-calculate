@@ -48,9 +48,21 @@ describe('multiply', () => {
 
 describe('divide', () => {
 
+    it('receives two numbers', () => {
+        assert.throws(() => {
+            divide(4, 'I am not a number');
+        }, Error);
+    });
+
+    it('doesn\'t divide by zero', () => {
+        assert.throws(() => {
+            divide(4, 0);
+        }, Error);
+    });
+
     it('returns the quotient of two numbers', () => {
         const quot = divide(21, 7);
         assert.equal(quot, 3);
-    })
+    });
 
 });
