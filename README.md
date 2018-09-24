@@ -5,6 +5,7 @@
 [arithmetic.js](#arithmetic.js) 
 
 <a name="greet.js"/>
+
 ## greet.js
 
 ### Function: greet
@@ -31,6 +32,7 @@
 
 
 <a name="arithmetic.js"/>
+
 ## arithmetic.js
 
 ### Function: add
