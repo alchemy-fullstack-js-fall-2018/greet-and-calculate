@@ -59,12 +59,12 @@ any additional information that you would like.
 
 ## Challenge Tasks
 
-#### Greet Module
+### Greet Module
 
 * The `greet` function should take a salutation as an optional input to be concatenated with the input name:
 eg. ("Greetings susan").
 
-#### Arithmetic Module
+### Arithmetic Module
 
 * The `multiply` method should have 2 parameters (airty of two)
   * `if` either argument is a non-number the function should throw an error
