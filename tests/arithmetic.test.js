@@ -30,4 +30,10 @@ describe('arithmetic', () =>{
         assert.equal(product, 10);
     });
 
+    it('multiply should throw an error if given non-number input', () => {
+        assert.throws(() => {
+            multiply('ham', 5);
+        }, Error);
+    });
+
 });
