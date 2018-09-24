@@ -41,6 +41,12 @@ describe('arithmetic', () =>{
         assert.equal(quotient, 2);
     });
 
+    it('divide should throw error if given non-number input', () => {
+        assert.throws(() => {
+            divide('ham', 4);
+        }, Error);
+    });
+
     it('should throw an error if dividing by 0', () => {
         assert.throws(() => {
             divide(3, 0);
