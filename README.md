@@ -5,16 +5,16 @@
 Configure the root of your repository with the following files and directories.
 Thoughtfully name and organize any additional configuration or module files.
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a `.gitignore` file
-* **.eslintrc** - contains the course linter configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
+<!-- * **README.md** - contains your documentation -->
+<!-- * **.gitignore** - contains a `.gitignore` file -->
+<!-- * **.eslintrc** - contains the course linter configuration
+* **.travis.yml** - contains your travis testing instructions -->
+<!-- * **package.json** - contains npm package config  -->
+  <!-- * jest and eslint must be dependencies
   * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+  * create a `test` script for running tests -->
+<!-- * **lib/** - contains module definitions -->
+<!-- * **__test__/** - contains unit tests -->
 
 ## Testing
 
