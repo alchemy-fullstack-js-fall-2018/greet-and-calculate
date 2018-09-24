@@ -7,11 +7,17 @@ describe('addition', () => {
         const sum = add(24, 41);
         assert.equal(sum, 65);
     });
-
+    
     it('throws error when one or both of the arguments are NaN', () => {
         assert.throws(() => {
             add('a', 5);
         }, Error);
     });
     
+    it('adds numbers in the form of strings when they are provided as arguments', () => {
+        const sum = add('24', '41');
+        assert.equal(sum, 65);
+    });
+    
+
 });
