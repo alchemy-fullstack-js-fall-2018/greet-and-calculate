@@ -33,6 +33,12 @@ describe('sub', () => {
 
 describe('multiply', () => {
 
+    it('receives two numbers', () => {
+        assert.throws(() => {
+            multiply({});
+        }, Error);
+    });
+
     it('returns the product of two numbers', () => {
         const prod = multiply(4, 5);
         assert.equal(prod, 20);
