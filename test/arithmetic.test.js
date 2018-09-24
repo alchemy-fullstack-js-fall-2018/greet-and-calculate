@@ -10,4 +10,9 @@ describe('add', () => {
         }, Error);
     });
 
+    it('returns sum of two numbers', () => {
+        const sum = add(2, 3);
+        assert.equal(sum, 5);
+    });
+
 });
