@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { add, sub, multiply } = require('../lib/arithmetic');
+const { add, sub, multiply, divide } = require('../lib/arithmetic');
 
 describe('add', () => {
 
@@ -43,5 +43,14 @@ describe('multiply', () => {
         const prod = multiply(4, 5);
         assert.equal(prod, 20);
     });
+
+});
+
+describe('divide', () => {
+
+    it('returns the quotient of two numbers', () => {
+        const quot = divide(21, 7);
+        assert.equal(quot, 3);
+    })
 
 });
