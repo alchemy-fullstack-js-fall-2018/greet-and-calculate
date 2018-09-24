@@ -9,5 +9,9 @@ describe('greet', () => {
         }, Error);
     });
 
+    it('returns "hello world" if "world" is input', () => {
+        const greeting = greet('world');
+        assert.equal(greeting, 'hello world');
+    });
 
 });
