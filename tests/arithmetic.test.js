@@ -10,4 +10,12 @@ describe('arithmetic', () =>{
         const difference = subtract(2, 5);
         assert.equal(difference, -3);
     });
+    it('should throw an error if given non-number input', () => {
+        assert.throws(() => {
+            add(5, 'ham');
+        }, Error);
+        assert.throws(() => {
+            subtract(2, 'cheese');
+        }, Error);
+    });
 });
