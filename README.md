@@ -1,8 +1,8 @@
-# _{Greet and Calculate}_
+# _Greet and Calculate_
 
-#### _{An introduction to Test Driven Development (TDD)}, {September 24, 2018}_
+#### _An introduction to Test Driven Development (TDD), September 24, 2018_
 
-#### By _**{Mike Lambert}**_
+#### By _**Mike Lambert**_
 
 ## Description
 
@@ -12,7 +12,7 @@ The function in greet takes a single parameter, which must be a string, returns 
 
 The functions in arithmetic each take two paramenters, both numbers. add() returns the sum of these numbers, while sub() returns the difference.
 
-All modules were built and tested with TDD.  }_
+All modules were built and tested with TDD._
 
 ## Setup/Installation Requirements
 
@@ -34,4 +34,4 @@ _node.js and jest_
 
 *WTFPL*
 
-Copyright (c) 2018 **_{Mike Lambert}_**
+Copyright (c) 2018 **_Mike Lambert_**
