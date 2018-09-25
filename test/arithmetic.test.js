@@ -9,4 +9,8 @@ describe('arithmetic', () => {
             add({});
         }, Error);
     });
+    it('adds both numbers', () => {
+        const sum = add(1, 2);
+        assert.equal(sum, 3);
+    });
 });
