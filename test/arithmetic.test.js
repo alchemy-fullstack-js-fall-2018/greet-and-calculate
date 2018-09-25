@@ -1,17 +1,21 @@
 const assert = require('assert');
-const numberTest = require('../lib/arithmetic');
+const add = require('../lib/arithmetic');
+// const subtract = require('../lib/arithmetic');
 
 describe('number test', () => {
 
     it('this should be a numeric value', () => {
-        const number = numberTest('valid')
-        assert.equal(number, 'this is a valid number')
+        assert.throws(() => {
+            add('1', '2');
+        }, Error);
     });
 
-    it('throws an error when this is not a number', () => {
-        const number = numberTest('invalid')
-        assert.equal(number, 'this is not an invalid number')
+    it('this adds two numbers', () => {
+        const addition = add(2, 4);
+        assert.equal(addition, 6);
     });
+
+    it('this subtracts two numbers')
 })
 
 
