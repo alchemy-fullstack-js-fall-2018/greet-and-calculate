@@ -1,77 +1,53 @@
-# Greet and Calculate
+# Greet And Calculate
 
-## Configuration
+This project is an example of introductory level Test Driven Development. Version 0.1.0 includes a *greet.js* file with a greeting function that can be used to print 'hello' + a name passed in as an argument. It also includes an *arithmetic.js* file with a basic functions for addition and subtraction.
 
-Configure the root of your repository with the following files and directories.
-Thoughtfully name and organize any additional configuration or module files.
+## Getting Started
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a `.gitignore` file
-* **.eslintrc** - contains the course linter configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
-  * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+Fork this repository and clone it down to your local machine.
 
-## Testing
+### Prerequisites
 
-### Greet Module Tests
+You'll need to have node and npm installed and up to date on your computer, a command line interface (CLI) like Terminal on a Mac or gitbash on a PC, and a code editor (VS Code was used to develop this project). 
 
-* Write a test that expects the greet module to throw an error when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
+You can check to see if you have node and npm installed by using the following commands:
+```
+node -v
+npm -v
+```
 
-### Arithmetic Module Tests
+If it is not yet installed, you can find more information about installing them here:
 
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
+[install npm](https://www.npmjs.com/get-npm)
+[install node](https://nodejs.org/en/download/)
 
-## Feature Tasks
 
-### Greet Module
+### Installing
 
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should throw an error if the input is not a string
+Once you have npm and node installed and you've opened up the forked repository in you editor of choice, you'll need to install the dependencies from the package.json file.
 
-### Arithmetic Module
+```
+npm i
+```
 
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have
-`add` and `sub` methods that implement addition and subtraction.
+## Running the tests
 
-* The `add` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the second parameter subtracted from the first parameter
+This project uses eslint, jest, and node's assert for testing. They should be installed when you've finished installing the dependencies. Then you can run the following script to run the tests in the test file:
 
-### Documentation
+```
+npm run test:watch
+```
 
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function
-description should include it's airty (expected number of parameters), the expected data for each parameter
-(data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include
-any additional information that you would like.
+### What the tests do
 
-## Challenge Tasks
+*greet.test.js* has two tests that run on *greet.js*, the first of which tests that the greet function returns the expected greeting when a valid argument is supplied, and the second of which returns an error when an invalid argument is supplied. The greet function accepts a single argument in string format.
 
-### Greet Module
+*arithmetic.test.js* has five tests of the add function and five tests of the subtract function in *arithmetic.js*. These ensure that the functions can do arithmetic with integers, floating point numbers, and numbers in string format as inputs. If an argument is passed in in any other format, an error should be returned. The add and subtract functions accept 2 arguments which must be integers, floating point numbers, or numbers in string format. As written, the results of addition and subtraction of very large numbers (1 * 10^22 and larger) will not be completely accurate.
 
-* The `greet` function should take an input name and an options object. If the options object includes a salutation key
-greet should return the salutation concatenated with name: eg. ("Greetings susan").
+## Author
 
-* Play around with other options you can pass. For example, shout.
+* **Sarah Flynn** - [My Github](https://github.com/sarahflynn)
 
-### Arithmetic Module
+## Acknowledgments
 
-* The `multiply` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the 2 numbers multiplied by eachother
-* The `divide` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `if` the second argument is `0` the function should throw an error
-  * `else` return the first number divided by the second
+* Code partially modeled on a demo by MartyPDX - [MartyPDX GitHub](https://github.com/martypdx/tdd-greeter)
