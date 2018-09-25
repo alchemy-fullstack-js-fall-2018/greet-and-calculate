@@ -8,15 +8,11 @@ describe('greet', () => {
         assert.equal(greeting, 'hello world');
     });
 
-    // it('greets with "unknown" when no name is provided', () => {
-    //     const greeting = greet();
-
-    // })
-
-
     it('throws an error when name is not a string', () => {
         assert.throws(() => {
             greet({});
         }, Error);
     });
 });
+
+
