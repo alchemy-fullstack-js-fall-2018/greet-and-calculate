@@ -9,7 +9,7 @@ describe(add, () => {
 
     it('throws error if either argument is not a number', () => {
         assert.throws(() => {
-            add(NaN, 1);
+            add('This is not a number', 1);
         }, Error);
     });
 });
@@ -23,7 +23,7 @@ describe(sub, () => {
 
     it('throws error if either argument is not a number', () => {
         assert.throws(() => {
-            sub(NaN, 2);
+            sub('this is not a number', 2);
         }, Error);
     });
 
