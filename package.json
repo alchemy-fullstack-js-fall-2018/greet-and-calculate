@@ -1,0 +1,26 @@
+{
+  "name": "greet-and-calculate",
+  "version": "1.0.0",
+  "description": "## Configuration",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miloofcroton/greet-and-calculate.git"
+  },
+  "author": "Jack Toumey <jack@toumey.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miloofcroton/greet-and-calculate/issues"
+  },
+  "homepage": "https://github.com/miloofcroton/greet-and-calculate#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "jest": "^23.6.0"
+  }
+}
