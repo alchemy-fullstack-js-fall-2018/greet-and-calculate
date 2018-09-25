@@ -1,0 +1,31 @@
+{
+  "name": "greet-and-calculate",
+  "version": "1.0.0",
+  "description": "Configure the root of your repository with the following files and directories.\r Thoughtfully name and organize any additional configuration or module files.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "pretest": "npm run lint",
+    "test:watch": "jest --watch",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acrankin/greet-and-calculate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acrankin/greet-and-calculate/issues"
+  },
+  "homepage": "https://github.com/acrankin/greet-and-calculate#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "jest": "^23.6.0"
+  }
+}
