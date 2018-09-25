@@ -1,6 +1,5 @@
 const assert = require('assert');
-const add = require('../lib/arithmetic');
-// const subtract = require('../lib/arithmetic');
+const { add, subtract, multiply, division } = require('../lib/arithmetic');
 
 describe('number test', () => {
 
@@ -15,20 +14,20 @@ describe('number test', () => {
         assert.equal(addition, 6);
     });
 
-    it('this subtracts two numbers')
+    it('this subtracts two numbers', () => {
+        const subtraction = subtract(10, 5);
+        assert.equal(subtraction, 5);
+    });
+
+    it('this multiplies two numbers', () => {
+        const multiplication = multiply(10, 5);
+        assert.equal(multiplication, 50);
+    });
+
+    it('this divides two numbers', () => {
+        const divide = division(100, 10);
+        assert.equal(divide, 10);
+    });
 })
 
 
-// describe('greet', () => {
-    
-//     it('greets supplied name', () => {
-//         const greeting = greet('world');
-//         assert.equal(greeting, 'hello world');
-//     });
-
-//     it('throws an error when name is not a string', () => {
-//         assert.throws(() => {
-//             greet({});
-//         }, Error);
-//     });
-// });
