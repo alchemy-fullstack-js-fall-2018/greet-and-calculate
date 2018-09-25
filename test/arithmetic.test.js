@@ -28,6 +28,6 @@ describe('number test', () => {
         const divide = division(100, 10);
         assert.equal(divide, 10);
     });
-})
+});
 
 
