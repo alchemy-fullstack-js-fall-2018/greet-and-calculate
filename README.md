@@ -1,77 +1,37 @@
-# Greet and Calculate
+# _Greet and Calculate_
 
-## Configuration
+#### _An introduction to Test Driven Development (TDD), September 24, 2018_
 
-Configure the root of your repository with the following files and directories.
-Thoughtfully name and organize any additional configuration or module files.
+#### By _**Mike Lambert**_
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a `.gitignore` file
-* **.eslintrc** - contains the course linter configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
-  * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+## Description
 
-## Testing
+_{This simple application was built to introduce the practice of TDD. The lib contains two modules, greet and arithmetic. 
 
-### Greet Module Tests
+The function in greet takes a single parameter, which must be a string, returns this parameter concatenated onto the string "hello", and then adds a "!" at the end.
 
-* Write a test that expects the greet module to throw an error when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
+The functions in arithmetic each take two paramenters, both numbers. add() returns the sum of these numbers, while sub() returns the difference.
 
-### Arithmetic Module Tests
+All modules were built and tested with TDD._
 
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
+## Setup/Installation Requirements
 
-## Feature Tasks
+* _Clone to your local repository and run tests with the command "npm run test:watch"_
 
-### Greet Module
+## Known Bugs
 
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should throw an error if the input is not a string
+_None_
 
-### Arithmetic Module
+## Support and contact details
 
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have
-`add` and `sub` methods that implement addition and subtraction.
+_If you have any questions, please reach out to me at mlamb128@gmail.com_
 
-* The `add` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the second parameter subtracted from the first parameter
+## Technologies Used
 
-### Documentation
+_node.js and jest_
 
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function
-description should include it's airty (expected number of parameters), the expected data for each parameter
-(data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include
-any additional information that you would like.
+### License
 
-## Challenge Tasks
+*WTFPL*
 
-### Greet Module
-
-* The `greet` function should take an input name and an options object. If the options object includes a salutation key
-greet should return the salutation concatenated with name: eg. ("Greetings susan").
-
-* Play around with other options you can pass. For example, shout.
-
-### Arithmetic Module
-
-* The `multiply` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `else` return the 2 numbers multiplied by eachother
-* The `divide` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should throw an error
-  * `if` the second argument is `0` the function should throw an error
-  * `else` return the first number divided by the second
+Copyright (c) 2018 **_Mike Lambert_**
