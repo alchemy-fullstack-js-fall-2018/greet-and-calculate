@@ -75,3 +75,19 @@ greet should return the salutation concatenated with name: eg. ("Greetings susan
   * `if` either argument is a non-number the function should throw an error
   * `if` the second argument is `0` the function should throw an error
   * `else` return the first number divided by the second
+
+
+I have the following modules:
+
+    greeter: This function will initally test whether the name is a string. If it's anything other than a string, it will give an error message "name must be a string". If it is a string, it will give pass the test and return the name. The two parameters required are salutation and name (both should be a string).
+
+    greet: This is a simple function that uses one parameter "name" and works with the greeter function to return 'hello' + 'name' if a valid name/string is passed in the greeter function.
+
+    add: This is an addition function which uses two parameters. It will initally take the two values and test whether both are 'numbers', if it doesn't pass, it will give an error message 'this must be a numeric value'. If it passes the test, it will return the sum of the two numbers.
+
+    subtract:  The subtract function  uses two parameters. It will initally take the two values and test whether both are 'numbers', if it doesn't pass, it will give an error message 'this must be a numeric value'. If it passes the test, it will return the difference between the two numbers.
+
+    multiply: The multiply function uses two parameters. It will initally take the two values and test whether both are 'numbers', if it doesn't pass, it will be given an error message 'this must be a numeric value'. If it passes the test, it will multiply the two numbers and provide the results.
+
+    division: The division function which uses two parameters. It will initally take the two values and test whether both are 'numbers', if it doesn't pass, it will be given an error message 'this must be a numeric value'. Then, it will go through another if statement and take the 2nd parameter and test whether the number is equal to zero. If it is zero, it will spit out another error message stating 'cannot divide by 0'. However, if it passes, it will return the division of both numbers. 
+    
